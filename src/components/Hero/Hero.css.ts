@@ -109,3 +109,50 @@ export const heroBackground = style({
   zIndex: 0,
   opacity: 0.5,
 });
+
+export const projectsSection = style({
+  width: '100%',
+  maxWidth: '1200px',
+  marginTop: vars.space.xxl,
+  zIndex: 1,
+});
+
+export const projectsHeading = style({
+  fontSize: vars.fontSizes.xl,
+  fontWeight: vars.fontWeights.bold,
+  color: vars.colors.text,
+  marginBottom: vars.space.xl,
+  textAlign: 'center',
+});
+
+export const projectsGrid = style({
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+  gap: vars.space.xl,
+  width: '100%',
+});
+
+export const projectCard = style({
+  borderRadius: vars.borderRadius.lg,
+  overflow: 'hidden',
+  backgroundColor: vars.colors.background,
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  transition: 'transform 0.2s ease-in-out',
+  ':hover': {
+    transform: 'translateY(-4px)',
+  },
+});
+
+export const projectThumbnail = style({
+  width: '100%',
+  aspectRatio: '16/9',
+  objectFit: 'cover',
+});
+
+export const projectTitle = style({
+  fontSize: vars.fontSizes.md,
+  fontWeight: vars.fontWeights.medium,
+  color: vars.colors.text,
+  padding: vars.space.md,
+  margin: 0,
+});
